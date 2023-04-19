@@ -1,0 +1,164 @@
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+header {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #F7F7F7;
+  padding: 20px;
+}
+
+body {
+  font-family: "Noto Serif", serif;
+}
+
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+section {
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ccc;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Styles for the profile container */
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Styles for the profile image */
+.profile-image {
+  float: left;
+  margin-right: 20px;
+  width: 110px;
+  /* Adjust this value to make the photo smaller */
+  height: auto;
+}
+
+/* Styles for the profile text */
+.profile-text {
+  width: calc(100% - 130px);
+  font-size: 14px;
+  /* Adjust this value to make the text smaller */
+}
+
+.profile-text h1 {
+  font-size: 24px;
+  /* Adjust this value to make the heading smaller */
+}
+
+.profile-text h2 {
+  font-size: 18px;
+  /* Adjust this value to make the subheading smaller */
+}
+
+.publication {
+  margin-bottom: 20px;
+}
+
+.publication h4 {
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+.publication p {
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+
+.publication a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.publication a:hover {
+  text-decoration: underline;
+}
+
+
+.publication-link {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 2px;
+  display: inline-block;
+}
+
+
+.honor {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.honor-year {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.honor-title {
+  display: inline-block;
+  width: 320px;
+}
+
+.teaching {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.teaching-title {
+  display: inline-block;
+  width: 350px;
+}
+
+.teaching-role {
+  display: inline-block;
+  width: 200px;
+}
+
+.teaching-year {
+  width: 100px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.education {
+  margin-bottom: 20px;
+
+}
+
+.education-university {
+  display: inline-block;
+  font-weight: bold;
+  width: 400px;
+}
+
+.education-degree {
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+  margin-top: 20px;
+}
