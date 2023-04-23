@@ -49,7 +49,7 @@ ul {
 .profile-image {
   float: left;
   margin-right: 20px;
-  width: 110px;
+  width: 270px;
   /* Adjust this value to make the photo smaller */
   height: auto;
 }
@@ -62,12 +62,22 @@ ul {
 }
 
 .profile-text h1 {
-  font-size: 24px;
+  font-size: 26px;
+  margin-bottom: 10px;
   /* Adjust this value to make the heading smaller */
 }
 
 .profile-text h2 {
-  font-size: 18px;
+  font-size: 22px;
+  margin-bottom: 10px;
+  /* Adjust this value to make the subheading smaller */
+}
+
+
+.profile-text address {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   /* Adjust this value to make the subheading smaller */
 }
 
