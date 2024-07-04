@@ -27,8 +27,23 @@ address {
   margin-bottom: 10px;
 }
 
+.news-date {
+  font-weight: bold; /* Make date bold */
+}
+.news-content {
+  margin-left: 20px; /* Space between date and content */
+}
+
+.news-item {
+  padding-top: 5px;
+}
+
+.news {
+  padding-bottom: 20px;
+}
 section {
-  margin-bottom: 5px;
+  padding-top: 15px;
+  padding-bottom: 5px;
   border-bottom: 2px solid #ccc;
 }
 
@@ -50,6 +65,7 @@ ul {
   float: left;
   margin-right: 20px;
   width: 200px;
+  border-radius: 50%;
   /* Adjust this value to make the photo smaller */
   height: auto;
 }
@@ -153,7 +169,6 @@ ul {
 
 .education {
   margin-bottom: 10px;
-
 }
 
 .education-university {
@@ -171,4 +186,17 @@ footer {
   font-size: 14px;
   color: #999;
   margin-top: 10px;
+}
+
+
+.navbar a {
+  text-align: left;
+  padding: 5px;
+}
+.navbar a:first-child {
+  padding: 0;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: rgb(72, 24, 24);
 }

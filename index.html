@@ -5,35 +5,58 @@
   <title>Zhiyu Fan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  
 </head>
 
 <body>
   <header>
+
     <div class="profile">
       <img src="files/photo.jpg" alt="Zhiyu Fan" class="profile-image">
       <div class="profile-text">
         <h1>Zhiyu Fan</h1>
-        <h2>PhD Student</h2>
+        <h2>PhD Candidate</h2>
         <h3>National University of Singapore</h3>
         <h3>School of Computing</h3>
         <address>
           15 Computing Drive, Singapore<br>
-          zhiyufan@comp.nus.edu.sg<br>
+          <a href="mailto:zhiyufan@comp.nus.edu.sg">zhiyufan@comp.nus.edu.sg</a><br><br>
         </address>
-        <a href="files/cv.pdf">CV</a>
-        <a href="https://scholar.google.com/citations?user=FDeRRkIAAAAJ&hl=en">Google Scholar</a>
-      </div>
+        <div class="navbar">
+          <a href="files/cv.pdf">[CV]</a>
+          <a href="#publications">[Publications]</a>
+          <a href="projects.html">[Projects]</a>
+          <a href="#services">[Services]</a>
+          <a href="#teaching">[Teaching]</a>
+          <a href="https://scholar.google.com/citations?user=FDeRRkIAAAAJ&hl=en">[Google Scholar]</a>
+        </div>
+        </div>
+      
     </div>
+    
   </header>
+  
   <main>
     <section>
       <h2>Bio</h2>
-      <p>I am a final year PhD student in the School of Computing at the <a href="https://www.nus.edu.sg/">National University of
-          Singapore</a>, advised by <a href="https://abhikrc.com/">Prof. Abhik Roychoudhury</a></span>. I obtained my Bachelor's degree in Computer
+      <p>Zhiyu Fan a final year PhD candidate in the School of Computing at the <a href="https://www.nus.edu.sg/">National University of
+          Singapore</a>, advised by <a href="https://abhikrc.com/">Prof. Abhik Roychoudhury</a></span>. He obtained my Bachelor's degree in Computer
         Science from the <a href="https://www.sustech.edu.cn/en/">Southern University of Science and Technology<a> in
-            China, where I was advised by Prof. Shin Hwei Tan.</p>
-      <p>My research interests lie in the areas of automated program repair, large language models, with a focus on
-        intelligent tutoring for programming education. I have been working on (1) building an end-to-end Intelligent Tutoring System to boost Computer Science education with SE techniques via a newly designed new SE course, as well as (2) exploring automated repair for AI-generated programs.
+            China, where he was advised by Prof. Shin Hwei Tan.</p>
+      <p>His research interest has been focused on the intersections of automated program repair, automatic programming, and computer science education. His research work on program repair for intelligent tutoring (<a href="files/TOSEM2022.pdf">TOSEM22</a>, <a href="files/ISSTA2023.pdf">ISSTA23</a>, program repair of AI programs (<a href="files/ICSE2023.pdf">ICSE23</a>), explorations on AI (i.e. LLM) programming (<a href="files/ISSTA2024b.pdf">ISSTA24a, ISSTA24b</a>) have been published in top-tier software engineering venues. His has led the development of <a href="projects.html">Intelligent Tutoring System</a> to boost Computer Science education at scale via SE and LLM techniques, which has been deployed in NUS.
+      </p>
+      </section>
+
+    <section class="news">
+      <h2>News</h2>
+      <div class="news-item">
+        <span class="news-date">[07.2024]</span>
+        <span class="news-content">Two papers on LLM (1) oracle-guided code generation, (2) autonomous AI SWE are accepted at ISSTA 2024.</span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">[04.2024]</span>
+        <span class="news-content">We have released the first open-source AI software engineer <a href="https://github.com/nus-apr/auto-code-rover">AutoCodeRover</a>. Check it out in Github!</span>
+      </div>
     </section>
 
     <section>
@@ -53,7 +76,7 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section id="publications">
       <h2>Publications</h2> <a>(*: Joint-first author)</a>
 
       <ul>
@@ -65,6 +88,7 @@
             </h4>
             <p class="publication-authors">Yuntong Zhang, Haifeng Ruan, <strong><u>Zhiyu Fan</u></strong>, Abhik Roychoudhury</p>
             <p class="publication-details">International Symposium on Software Testing and Analysis (ISSTA), 2024</p>
+            <p>(One line abstract) Natural language as program specification, equip LLMs with <i>debugging</i> capability to resolve real-world Github Issues</p>
           </div>
        </li>
        <li>
@@ -74,6 +98,7 @@
             </h4>
             <p class="publication-authors"> <strong><u>Zhiyu Fan</u></strong>, Haifeng Ruan, Sergey Mechtaev, Abhik Roychoudhury</p>
             <p class="publication-details">International Symposium on Software Testing and Analysis (ISSTA), 2024</p>
+            <p>(One line abstract) LLMs can effectively work as oracle to select correct AI-programs regard natural language description</p>
           </div>
       </li>
        <li>
@@ -83,7 +108,9 @@
             </h4>
             <p class="publication-authors"><strong><u>Zhiyu Fan</u></strong>, Yannic Noller, Ashish Dandekar, Abhik Roychoudhury</p>
             <p class="publication-details">arXiv preprint, 2023</p>
+            <p>(One line abstract) An modular and extensible feedback generation system that consist of advanced research ideas from APR and LLM</p>
           </div>
+
         </li>
         <li>
           <div class="publication">
@@ -92,6 +119,7 @@
             </h4>
             <p class="publication-authors"><strong><u>Zhiyu Fan</u></strong>, Shin Hwei Tan, Abhik Roychoudhury</p>
             <p class="publication-details">International Symposium on Software Testing and Analysis (ISSTA), 2023.</p>
+            <p>(One line abstract) We proposed the notion of a concept graph for grading and providing feedback for programming assignments</p>
           </div>
         </li>
         <li>
@@ -103,6 +131,7 @@
               Roychoudhury, Shin Hwei Tan</p>
             <p class="publication-details">45th IEEE/ACM International Conference on Software Engineering (ICSE), 2023.
             </p>
+            <p>(One line abstract) The first systematic study of LLM for APR and APR of LLM-generated programs
           </div>
         </li>
         <li>
@@ -114,6 +143,7 @@
             <p class="publication-authors">Umair Z. Ahmed*, <strong><u>Zhiyu Fan*</u></strong>, Jooyong Yi, Omar I.
               Al-Bataineh, Abhik Roychoudhury.</p>
             <p class="publication-details">ACM Transactions on Software Engineering and Methodology (TOSEM), 2022.</p>
+            <p>(One line abstract) Verified repair patches (guaranteed correctness and minimal changes) as feedback to student, avoiding misleading guidance.</p>
           </div>
         </li>
         <!-- Add more publications here -->
@@ -121,7 +151,7 @@
 
     </section>
 
-    <section>
+    <section id="services">
       <h2>Services</h2>
       <ul>
         <li class="service"><span class="service-title">Reviewer for TOSEM 2024</span></li>
@@ -141,7 +171,7 @@
       </ul>
     </section>
 
-    <section>
+    <section id="teaching">
       <h2>Teaching Experience</h2>
       <ul>
         <li class="teaching">
