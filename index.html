@@ -7,29 +7,40 @@
   <link rel="stylesheet" href="style.css">
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
   </script> 
+  <meta name="description" content="Zhiyu Fan's academic homepage - Research in Software Engineering and AI">
+  <meta name="keywords" content="Zhiyu Fan, Software Engineering, AI, Program Repair">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
 
     <div class="profile">
-      <img src="files/photo.jpg" alt="Zhiyu Fan" class="profile-image">
+      <img src="files/photo.jpg" alt="Zhiyu Fan" class="profile-image" loading="lazy">
       <div class="profile-text">
         <h1>Zhiyu Fan</h1>
-        <h2>PhD Candidate</h2>
-        <h3>National University of Singapore</h3>
-        <h3>School of Computing</h3>
+        <h2> Ph.D</h2>
+        <h2>National University of Singapore</h2>
         <address>
-          15 Computing Drive, Singapore<br>
-          <a href="mailto:zhiyufan@comp.nus.edu.sg">zhiyufan@comp.nus.edu.sg</a><br><br>
+          <script type="text/javascript">
+            var username = 'zhiyufan';
+            var domain = 'outlook.com';
+            document.write('<a href="mailto:' + username + '@' + domain + '">' + 
+                          username + '[at]' + domain + '</a>');
+          </script>
+          <noscript>
+            zhiyufan [at] outlook.com
+          </noscript>
         </address>
         <div class="navbar">
-          <a href="files/cv.pdf">[CV]</a>
-          <a href="#publications">[Publications]</a>
-          <a href="projects.html">[Projects]</a>
-          <a href="#services">[Services]</a>
-          <a href="#teaching">[Teaching]</a>
-          <a href="https://scholar.google.com/citations?user=FDeRRkIAAAAJ&hl=en">[Google Scholar]</a>
+          <a href="files/cv.pdf">CV</a>
+          <a href="#publications">Publications</a>
+          <!-- <a href="projects.html">Projects</a> -->
+          <a href="#services">Services</a>
+          <a href="#teaching">Teaching</a>
+          <a href="https://scholar.google.com/citations?user=FDeRRkIAAAAJ&hl=en">Google Scholar</a>
         </div>
         </div>
       
@@ -40,16 +51,26 @@
   <main>
     <section>
       <h2>Bio</h2>
-      <p>Zhiyu Fan is a final year PhD candidate in the School of Computing at the <a href="https://www.nus.edu.sg/">National University of
-          Singapore</a>, advised by <a href="https://abhikrc.com/">Prof. Abhik Roychoudhury</a></span>. He obtained my Bachelor's degree in Computer
-        Science from the <a href="https://www.sustech.edu.cn/en/">Southern University of Science and Technology<a> in
-            China, where he was advised by Prof. Shin Hwei Tan.</p>
-      <p>He is broadly interest in Software Engineering and Generative AI, but his research has been focused on the intersections of <strong>automated program repair, automatic programming, and computer science education</strong>. His research work on program repair for intelligent tutoring (<a href="files/TOSEM2022.pdf">TOSEM22</a>, <a href="files/ISSTA2023.pdf">ISSTA23</a>), program repair of AI programs (<a href="files/ICSE2023.pdf">ICSE23</a>), explorations on AI (i.e. LLM) programming (<a href="files/ISSTA2024b.pdf">ISSTA24a, ISSTA24b</a>) have been published in top-tier software engineering venues. His has led the development of <a href="projects.html">Intelligent Tutoring System</a> to boost Computer Science education at scale via SE and LLM techniques, which has been deployed in NUS.
-      Detail can be found at <a href="projects.html">[Projects]</a>.</p>
+      <p>I earned my PhD degree from School of Computing at the <a href="https://www.nus.edu.sg/">National University of
+          Singapore</a>, where I was advised by <a href="https://abhikrc.com/">Prof. Abhik Roychoudhury</a></span>. Previously, I obtained my Bachelor's degree in Computer
+        Science from <a href="https://www.sustech.edu.cn/en/">SUSTech<a> in
+            China, where I was advised by <a href="https://shinhwei.com/">Prof. Shin Hwei Tan</a>.</p>
+      <p>My research goals include exploring the next-generation autonomous software development paradigm and enhance developers' trust in this process, and building intelligent system to ease computer science education with program analysis and AI. My research has been focused on the intersections of <strong>automated program repair, automatic programming, and computer science education</strong>.
+         My research work on program repair for intelligent tutoring (<a href="files/TOSEM2022.pdf">TOSEM22</a>, <a href="files/ISSTA2023.pdf">ISSTA23</a>, <a href="https://arxiv.org/pdf/2310.05472">CSEE&T25</a>), program repair of AI programs (<a href="files/ICSE2023.pdf">ICSE23</a>), explorations on AI (i.e. LLM) programming (<a href="files/ISSTA2024b.pdf">ISSTA24a, ISSTA24b</a>) have been published in top-tier software engineering venues. During my PhD, I led the development of <a href="projects.html">Intelligent Tutoring System</a> to boost Computer Science education at scale via SE and LLM techniques, which has been deployed in NUS.
+      <!-- Detail can be found at <a href="projects.html">[Projects]</a>. -->
+      </p>
       </section>
 
     <section class="news">
       <h2>News</h2>
+      <div class="news-item">
+        <span class="news-date">[01.2025]</span>
+        <span class="news-content">I have received NUS Dean's Graduate Research Excellence Award!</span>
+      </div>
+      <div class="news-item">
+        <span class="news-date">[12.2024]</span>
+        <span class="news-content">I have successfully defended my PhD thesis "Program Repair for Intelligent Tutoring and Programming Education".</span>
+      </div>
       <div class="news-item">
         <span class="news-date">[07.2024]</span>
         <span class="news-content">Two papers (1) LLM-as-oracle for CodeGen, (2) autonomous AI SWE are accepted at ISSTA 2024.</span>
@@ -64,14 +85,15 @@
       <h2>Education</h2>
       <ul>
         <li class="education">
-          <span class="education-university">National University of Singapore, Singapore</span>
-          <span class="education-dates">2019 - Present</span><br>
-          <span class="education-degree">Ph.D student (School of Computing)</span><br>
+          
+          <span class="education-university">National University of Singapore</span>      
+          <span class="education-dates">[2019.08 - 2024.12] </span><br>
+          <span class="education-degree">Ph.D (School of Computing)</span><br>
           <span class="education-advisor">Advisor: <a href="https://abhikrc.com/">Prof. Abhik Roychoudhury</a></span>
         </li>
         <li class="education">
-          <span class="education-university">Southern University of Science and Technology, China</span>
-          <span class="education-dates">2015 - 2019</span><br>
+          <span class="education-university">Southern University of Science and Technology</span>
+          <span class="education-dates">[2015.09 - 2019.06]</span><br>
           <span class="education-degree">B.E., (Dept of Computer Science)</span><br>
           <span class="education-advisor">Advisor: <a href="http://www.shinhwei.com/">Prof. Shin Hwei Tan</a></span>
         </li>
@@ -81,15 +103,25 @@
       <h2>Publications</h2> <a>(*: Joint-first author)</a>
 
       <ul>
-
+      
+        <li>
+          <div class="publication">
+            <h4 class="publication-title">[CSEE&T 2025] Software Engineering Educational Experience in Building an Intelligent Tutoring System
+              <a href="https://arxiv.org/pdf/2310.05472" target="_blank" class="publication-link">Paper</a>
+            </h4>
+            <p class="publication-authors"><strong><u>Zhiyu Fan</u></strong>, Yannic Noller, Ashish Dandekar, Abhik Roychoudhury</p>
+            <p class="publication-details">Conference on Software Engineering Education and Training (CSEE&T), previously known as ICSE-SEET, 2025</p>
+            <!-- <p>(One line abstract) An modular and extensible feedback generation system that consist of advanced research ideas from APR and LLM</p> -->
+          </div>
+        </li>
        <li>
            <div class="publication">
             <h4 class="publication-title">[ISSTA 2024] AutoCodeRover: Autonomous Program Improvement
-              <a href="https://arxiv.org/pdf/2404.05427" target="_blank" class="publication-link">Paper</a>
+              <a href="files/ISSTA2024a.pdf" target="_blank" class="publication-link">Paper</a>
             </h4>
             <p class="publication-authors">Yuntong Zhang, Haifeng Ruan, <strong><u>Zhiyu Fan</u></strong>, Abhik Roychoudhury</p>
             <p class="publication-details">International Symposium on Software Testing and Analysis (ISSTA), 2024</p>
-            <p>(One line abstract) Natural language as program specification, equip LLMs with <i>debugging</i> capability to resolve real-world Github Issues</p>
+            <!-- <p>(One line abstract) Natural language as program specification, equip LLMs with <i>debugging</i> capability to resolve real-world Github Issues</p> -->
           </div>
        </li>
        <li>
@@ -99,19 +131,20 @@
             </h4>
             <p class="publication-authors"> <strong><u>Zhiyu Fan</u></strong>, Haifeng Ruan, Sergey Mechtaev, Abhik Roychoudhury</p>
             <p class="publication-details">International Symposium on Software Testing and Analysis (ISSTA), 2024</p>
-            <p>(One line abstract) LLMs can effectively work as oracle to select correct AI-programs regard natural language description</p>
+            <!-- <p>(One line abstract) LLMs can effectively work as oracle to select correct AI-programs regard natural language description</p> -->
           </div>
       </li>
-       <li>
+        <li>
           <div class="publication">
-            <h4 class="publication-title">[arXiv] Intelligent Tutoring System: Experience of Linking Software Engineering and Programming Teaching
-              <a href="https://arxiv.org/pdf/2310.05472" target="_blank" class="publication-link">Paper</a>
+            <h4 class="publication-title">[ICSE 2023] Automated Repair of Programs from Large Language Models
+              <a href="files/ICSE2023.pdf" target="_blank" class="publication-link">Paper</a>
             </h4>
-            <p class="publication-authors"><strong><u>Zhiyu Fan</u></strong>, Yannic Noller, Ashish Dandekar, Abhik Roychoudhury</p>
-            <p class="publication-details">arXiv preprint, 2023</p>
-            <p>(One line abstract) An modular and extensible feedback generation system that consist of advanced research ideas from APR and LLM</p>
+            <p class="publication-authors"><strong><u>Zhiyu Fan</u></strong>, Xiang Gao, Martin Mirchev, Abhik
+              Roychoudhury, Shin Hwei Tan</p>
+            <p class="publication-details">IEEE/ACM International Conference on Software Engineering (ICSE), 2023.
+            </p>
+            <!-- <p>(One line abstract) The first systematic study of LLM for APR and APR of LLM-generated programs -->
           </div>
-
         </li>
         <li>
           <div class="publication">
@@ -120,19 +153,7 @@
             </h4>
             <p class="publication-authors"><strong><u>Zhiyu Fan</u></strong>, Shin Hwei Tan, Abhik Roychoudhury</p>
             <p class="publication-details">International Symposium on Software Testing and Analysis (ISSTA), 2023.</p>
-            <p>(One line abstract) We proposed the notion of a concept graph for grading and providing feedback for programming assignments</p>
-          </div>
-        </li>
-        <li>
-          <div class="publication">
-            <h4 class="publication-title">[ICSE 2023] Automated Repair of Programs from Large Language Models
-              <a href="files/ICSE2023.pdf" target="_blank" class="publication-link">Paper</a>
-            </h4>
-            <p class="publication-authors"><strong><u>Zhiyu Fan</u></strong>, Xiang Gao, Martin Mirchev, Abhik
-              Roychoudhury, Shin Hwei Tan</p>
-            <p class="publication-details">45th IEEE/ACM International Conference on Software Engineering (ICSE), 2023.
-            </p>
-            <p>(One line abstract) The first systematic study of LLM for APR and APR of LLM-generated programs
+            <!-- <p>(One line abstract) We proposed the notion of a concept graph for grading and providing feedback for programming assignments</p> -->
           </div>
         </li>
         <li>
@@ -144,10 +165,9 @@
             <p class="publication-authors">Umair Z. Ahmed*, <strong><u>Zhiyu Fan*</u></strong>, Jooyong Yi, Omar I.
               Al-Bataineh, Abhik Roychoudhury.</p>
             <p class="publication-details">ACM Transactions on Software Engineering and Methodology (TOSEM), 2022.</p>
-            <p>(One line abstract) Verified repair patches (guaranteed correctness and minimal changes) as feedback to student, avoiding misleading guidance.</p>
+            <!-- <p>(One line abstract) Verified patches (guaranteed correctness and minimal changes) as feedback to student, avoiding misleading guidance.</p> -->
           </div>
         </li>
-        <!-- Add more publications here -->
       </ul>
 
     </section>
@@ -157,18 +177,44 @@
       <ul>
         <li class="service"><span class="service-title">Reviewer for TOSEM 2024</span></li>
         <li class="service"><span class="service-title">PC Member for APR Workshop @ ICSE 2024</span></li>
-        <li class="service"><span class="service-title">Reviewer for SIGCSE 2024</span></li>
+        <li class="service"><span class="service-title">Reviewer for SIGCSE 2024, 2025</span></li>
         <li class="service"><span class="service-title">Reviewer for TSE 2023</span></li>
+        <li class="service"><span class="service-title">Student Volunteer for ESEC/FSE 2022</span></li>
       </ul>
     </section>
 
-    <section>
+    <section id="honors">
       <h2>Selected Awards</h2>
       <ul>
-        <li class="honor"><span class="honor-title">NUS Research Achievement Award</span> <span class="honor-year">2023</span></li>
-        <li class="honor"><span class="honor-title">NUS Research Scholarship</span> <span class="honor-year">2019 - 2024</span></li>
-        <li class="honor"><span class="honor-title">SUSTech Outstanding Graduate Student Award</span> <span class="honor-year">2019</span></li>
-        <li class="honor"><span class="honor-title">ACM SIGSOFT CAPS Grant</span> <span class="honor-year">2019</span></li>
+        <li class="honor">
+          <span class="honor-title">NUS Dean's Graduate Research Excellence Award</span>
+          <span class="honor-year">2024</span>
+        </li>
+
+        <li class="honor">
+          <span class="honor-title">NUS Research Achievement Award</span> 
+          <span class="honor-year">2023</span>
+        </li>
+
+        <li class="honor">
+          <span class="honor-title">NUS Research Scholarship</span>
+          <span class="honor-year">2019 - 2024</span>
+         </li>
+
+        <li class="honor">
+          <span class="honor-title">SUSTech Outstanding Graduate Student Award</span> 
+          <span class="honor-year">2019</span>
+        </li>
+
+        <li class="honor">
+          <span class="honor-title">SUSTech Outstanding Graduate Thesis Award</span> 
+          <span class="honor-year">2019</span>
+        </li>
+
+        <li class="honor">
+          <span class="honor-title">ACM SIGSOFT CAPS and Travel Grant</span> 
+          <span class="honor-year">2019</span>
+        </li>
       </ul>
     </section>
 
@@ -176,23 +222,27 @@
       <h2>Teaching Experience</h2>
       <ul>
         <li class="teaching">
+          <span class="teaching-code">CS2040S</span>
+          <span class="teaching-title">Data Structures and Algorithms</span>
           <span class="teaching-year">Spring 2024</span>
-          <span class="teaching-title">CS2040S - Data Structures and Algorithms</span>
           <span class="teaching-role">Teaching Assistant</span>
         </li>
         <li class="teaching">
+          <span class="teaching-code">CS3213</span>
+          <span class="teaching-title">Foundations of Software Engineering</span>
           <span class="teaching-year">Spring 2023</span>
-          <span class="teaching-title">CS3213 - Foundations of Software Engineering</span>
           <span class="teaching-role">Head Teaching Assistant</span>
         </li>
         <li class="teaching">
+          <span class="teaching-code">CS3213</span>
+          <span class="teaching-title">Foundations of Software Engineering</span>
           <span class="teaching-year">Spring 2022</span>
-          <span class="teaching-title">CS3213 - Foundations of Software Engineering</span>
-          <span class="teaching-role">Hdea Teaching Assistant</span>
+          <span class="teaching-role">Head Teaching Assistant</span>
         </li>
         <li class="teaching">
+          <span class="teaching-code">CS4211</span>
+          <span class="teaching-title">Formal Method for Software Engineering</span>
           <span class="teaching-year">Fall 2020</span>
-          <span class="teaching-title">CS4211 - Formal Method for Software Engineering</span>
           <span class="teaching-role">Teaching Assistant</span>
         </li>
       </ul>
