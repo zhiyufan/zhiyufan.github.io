@@ -25,13 +25,15 @@
         <h2>National University of Singapore</h2>
         <address>
           <script type="text/javascript">
-            var username = 'zhiyufan';
-            var domain = 'outlook.com';
-            document.write('<a href="mailto:' + username + '@' + domain + '">' + 
-                          username + '[at]' + domain + '</a>');
+            var parts = ['zhiyu', 'fan', 'outlook'];
+            document.write(
+              '<span class="email">' + 
+              parts[0] + parts[1] + ' [at] ' + parts[2] + ' [dot] ' + 'com' +
+              '</span>'
+            );
           </script>
           <noscript>
-            zhiyufan [at] outlook.com
+            <span class="email">zhiyufan [at] outlook [dot] com</span>
           </noscript>
         </address>
         <div class="navbar">
@@ -189,6 +191,11 @@
         <li class="honor">
           <span class="honor-title">NUS Dean's Graduate Research Excellence Award</span>
           <span class="honor-year">2024</span>
+        </li>
+
+        <li class="honor">
+          <span class="honor-title">NUS Research Incentive Award</span> 
+          <span class="honor-year">2023</span>
         </li>
 
         <li class="honor">
