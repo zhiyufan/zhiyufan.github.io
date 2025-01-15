@@ -80,38 +80,156 @@ main {
 
 /* 响应式设计 */
 @media (max-width: 768px) {
+  /* 基础布局调整 */
   body {
     padding: 0;
+    display: block;  /* 移除 flex 布局 */
   }
   
+  /* header 调整 */
   header {
     position: relative;
     height: auto;
-    flex: none;
     width: 100%;
-    padding: 15px;
     left: 0;
+    padding: 15px;
+    margin: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   
+  /* 主内容区域调整 */
   main {
-    margin-left: 0;
+    margin: 0;
     padding: 15px;
-  }
-  
-  footer {
     width: 100%;
-    margin-left: 0;
-    padding: 15px;
+    box-shadow: none;
   }
   
+  /* 个人信息区域调整 */
+  .profile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .profile-image {
+    width: 140px;  /* 稍微减小照片尺寸 */
+    margin-bottom: 15px;
+  }
+  
+  /* 导航栏调整 */
   .navbar {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
   }
   
   .navbar a {
     width: auto;
+    padding: 5px 10px;
+    font-size: 0.95em;
+  }
+  
+  /* footer 调整 */
+  footer {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+  }
+  
+  /* 内容区域通用调整 */
+  section {
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 0;
+  }
+  
+  /* Teaching 部分调整 */
+  .teaching {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding-left: 15px;
+  }
+
+  .teaching-year,
+  .teaching-code,
+  .teaching-title {
+    width: auto;  /* 移除固定宽度 */
+    display: block;
+  }
+
+  .teaching-role {
+    color: #666;
+    font-size: 0.9em;
+  }
+
+  /* Awards 部分调整 */
+  .honor {
+    flex-direction: column;
+    gap: 3px;
+    padding-left: 15px;
+  }
+
+  .honor-title {
+    width: auto;
+  }
+
+  .honor-year {
+    width: auto;
+    text-align: left;
+  }
+
+  /* Education 部分调整 */
+  .education-university {
+    width: auto;
+    display: block;
+  }
+
+  /* 调整标题间距 */
+  section h2 {
+    margin-bottom: 10px;
+  }
+
+  /* 优化列表样式 */
+  ul {
+    padding-left: 0;
+  }
+
+  /* 调整文本可读性 */
+  p {
+    line-height: 1.5;
+  }
+}
+
+/* 更小屏幕的特殊处理 */
+@media (max-width: 480px) {
+  /* 调整字体大小 */
+  body {
+    font-size: 13px;
+  }
+  
+  /* 调整内边距 */
+  main {
+    padding: 10px;
+  }
+  
+  section {
+    padding: 8px;
+  }
+  
+  /* 导航栏进一步优化 */
+  .navbar {
+    gap: 5px;
+  }
+  
+  .navbar a {
+    padding: 4px 8px;
+    font-size: 0.9em;
   }
 }
 
@@ -355,4 +473,11 @@ footer {
   font-size: 0.9em;    /* 稍微小一点的字体 */
   color: #666;         /* 淡化颜色 */
   font-style: italic;  /* 斜体 */
+}
+
+/* 邮件地址样式 */
+.email {
+  color: #2c3e50;
+  cursor: default;  /* 移除鼠标手型指针 */
+  user-select: all; /* 允许用户一次性选择全部文本 */
 }
