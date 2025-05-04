@@ -184,12 +184,6 @@ main {
     text-align: left;
   }
 
-  /* Education 部分调整 */
-  .education-university {
-    width: auto;
-    display: block;
-  }
-
   /* 调整标题间距 */
   section h2 {
     margin-bottom: 10px;
@@ -396,7 +390,7 @@ footer {
   background: #999;
 }
 
-.education-university {
+.education-university, .working-company {
   display: inline-block;
   width: 320px;
 }
