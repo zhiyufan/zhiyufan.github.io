@@ -18,33 +18,30 @@
   <header>
 
     <div class="profile">
-      <img src="files/photo.jpg" alt="Zhiyu Fan" class="profile-image" loading="lazy">
+      <div class="profile-image-wrapper">
+        <img src="files/photo.jpg" alt="Zhiyu Fan" class="profile-image" loading="lazy">
+      </div>
       <div class="profile-text">
         <h1>Zhiyu Fan</h1>
-        <h2> Ph.D</h2>
-        <h2>Huawei</h2>
-        <h2>Centre for Software Excellence</h2>
-        <address>
-          <script type="text/javascript">
-            var parts = ['zhiyu', 'fan', 'outlook'];
-            document.write(
-              '<span class="email">' + 
-              parts[0] + parts[1] + ' [at] ' + parts[2] + ' [dot] ' + 'com' +
-              '</span>'
-            );
-          </script>
-          <noscript>
-            <span class="email">zhiyufan [at] outlook [dot] com</span>
-          </noscript>
-        </address>
+        <p class="title">Senior Researcher @ Microsoft Research | PhD @ NUS</p>
+        <p class="location">Cambridge, UK</p>
+        <p class="focus">AI for Coding</p>
         <div class="navbar">
-          <a href="files/cv.pdf">CV</a>
           <a href="#publications">Publications</a>
-          <!-- <a href="projects.html">Projects</a> -->
           <a href="#services">Services</a>
           <a href="#teaching">Teaching</a>
-          <a href="https://scholar.google.com/citations?user=FDeRRkIAAAAJ&hl=en">Google Scholar</a>
+          <a href="https://scholar.google.com/citations?user=FDeRRkIAAAAJ&hl=en" target="_blank">Google Scholar</a>
+          <a id="email-link">Email</a>
         </div>
+        <script type="text/javascript">
+          (function() {
+            var e = [102,97,110,122,104,105,121,117,64,109,105,99,114,111,115,111,102,116,46,99,111,109];
+            var s = e.map(function(c) { return String.fromCharCode(c); }).join('');
+            var el = document.getElementById('email-link');
+            el.href = 'mai' + 'lto:' + s;
+            el.title = s;
+          })();
+        </script>
         </div>
       
     </div>
@@ -54,19 +51,20 @@
   <main>
     <section>
       <h2>Bio</h2>
-      <p>I'm a Principal Researcher at Huawei Centre for Software Excellence. I earned my PhD degree from School of Computing at the <a href="https://www.nus.edu.sg/">National University of
-          Singapore</a>, where I was advised by <a href="https://abhikrc.com/">Prof. Abhik Roychoudhury</a></span>. Previously, I obtained my Bachelor's degree in Computer
-        Science from <a href="https://www.sustech.edu.cn/en/">SUSTech<a> in
+      <p>I'm a Senior Researcher at Microsoft Research Cambridge, working on <strong>AI for Coding</strong>. I earned my PhD degree from School of Computing at the <a href="https://www.nus.edu.sg/">National University of
+          Singapore</a>, where I was advised by <a href="https://abhikrc.com/">Prof. Abhik Roychoudhury</a>. Previously, I obtained my Bachelor's degree in Computer
+        Science from <a href="https://www.sustech.edu.cn/en/">SUSTech</a> in
             China, where I was advised by <a href="https://shinhwei.com/">Prof. Shin Hwei Tan</a>.</p>
-      <p>My research interests focus on the intersections of <strong>automated program repair, automatic programming</strong>, including exploring the next-generation autonomous software development paradigm and enhance developers' trust in this process.
-         During my PhD, I work on program repair for intelligent tutoring (<a href="files/TOSEM2022.pdf">TOSEM22</a>, <a href="files/ISSTA2023.pdf">ISSTA23</a>, <a href="https://arxiv.org/pdf/2310.05472">CSEE&T25</a>), program repair of AI programs (<a href="files/ICSE2023.pdf">ICSE23</a>), explorations on AI (i.e. LLM) programming (<a href="files/ISSTA2024b.pdf">ISSTA24a, ISSTA24b</a>) 
-        
-        </p>
-      </section>
+      <p>My research focuses on <strong><em>AI for Coding</em></strong> — building autonomous systems that can understand, write, and improve code. I explore how large language models can be leveraged for program repair, code generation, and autonomous debugging, with the goal of creating AI agents that work alongside developers to build more reliable software. I am also interested in the emerging paradigm of <strong><em>vibe coding</em></strong>, where developers express intent in natural language and AI translates it into working code. Additionally, I study the security and trustworthiness challenges of coding agents to ensure they can be safely deployed in real-world development workflows.</p>
+            </section>
 
     <section class="news">
       <h2>News</h2>
 
+      <div class="news-item">
+        <span class="news-date">[02.2026]</span>
+        <span class="news-content">I have joined Microsoft Research Cambridge as a Senior Researcher!</span>
+      </div>
       <div class="news-item">
         <span class="news-date">[06.2025]</span>
         <span class="news-content">I have been invited to FSE'26 Research Track as PC Member!</span>
@@ -89,34 +87,6 @@
       </div>
     </section>
 
-    <section>
-      <h2>Working Experience</h2>
-      <ul>
-        <li class="working">
-          <span class="working-company">Huawei, 2012 Centre for Software Excellence</span>           
-          <span class="working-dates">[2025.02 - Present] </span><br>
-          <!-- <span class="working-dept"></span><br> -->
-          <span class="working-position">Principal Researcher</span><br>
-      </ul>
-    </section>
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li class="education">
-          
-          <span class="education-university">National University of Singapore</span>      
-          <span class="education-dates">[2019.08 - 2024.12] </span><br>
-          <span class="education-degree">Ph.D (School of Computing)</span><br>
-          <span class="education-advisor">Advisor: <a href="https://abhikrc.com/">Prof. Abhik Roychoudhury</a></span>
-        </li>
-        <li class="education">
-          <span class="education-university">Southern University of Science and Technology</span>
-          <span class="education-dates">[2015.09 - 2019.06]</span><br>
-          <span class="education-degree">B.E., (Dept of Computer Science)</span><br>
-          <span class="education-advisor">Advisor: <a href="http://www.shinhwei.com/">Prof. Shin Hwei Tan</a></span>
-        </li>
-      </ul>
-    </section>
     <section id="publications">
       <h2>Publications</h2> <a>(*: Joint-first author)</a>
 
@@ -178,7 +148,6 @@
           <div class="publication">
             <h4 class="publication-title">[TOSEM 2022] Verifix: Verified Repair of Programming Assignments
               <a href="files/TOSEM2022.pdf" target="_blank" class="publication-link">Paper</a>
-            </h4>
             </h4>
             <p class="publication-authors">Umair Z. Ahmed*, <strong><u>Zhiyu Fan*</u></strong>, Jooyong Yi, Omar I.
               Al-Bataineh, Abhik Roychoudhury.</p>
@@ -273,8 +242,7 @@
   </main>
 </body>
 <footer>
-  <span id="busuanzi_container_site_pv">This Page is Created by ChatGPT, and has been viewed <span id="busuanzi_value_site_pv"></span> times.
-</span>
+  <span id="busuanzi_container_site_pv">Page views: <span id="busuanzi_value_site_pv"></span></span>
 </footer>
 
 </html>

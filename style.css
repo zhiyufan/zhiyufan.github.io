@@ -14,15 +14,15 @@ body {
 
 /* 左侧个人信息栏 */
 header {
-  flex: 0 0 250px;
-  padding: 30px 20px;
+  width: 250px;
+  padding: 30px 35px;
   background-color: white;
   box-shadow: 2px 0 4px rgba(0,0,0,0.05);
   position: fixed;
   height: 100vh;
   overflow-y: auto;
   z-index: 100;
-  left: 100px;
+  left: 40px;
   top: 0;
 }
 
@@ -30,7 +30,7 @@ header {
 main {
   flex: 1;
   padding: 30px 40px;
-  margin-left: 340px;
+  margin-left: 380px;
   max-width: 900px;
   background-color: white;
   min-height: calc(100vh - 60px);
@@ -45,11 +45,20 @@ main {
   text-align: center;
 }
 
-.profile-image {
+.profile-image-wrapper {
   width: 160px;
+  height: 160px;
   margin-bottom: 15px;
-  border-radius: 8px;
+  border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  transform: scale(3);
+  transform-origin: 45% 45%;
 }
 
 /* 导航栏样式 */
@@ -295,11 +304,6 @@ section {
   transform: translateY(-1px);
 }
 
-/* 可以添加图标 */
-.publication-link::before {
-  content: "📄";
-  margin-right: 4px;
-}
 
 /* 调整标题和链接的布局 */
 .publication-title {
@@ -450,12 +454,24 @@ footer {
   margin-bottom: 5px;
 }
 
-.profile h2 {
-  font-size: 1.1em;  /* 减小 h2 的字体大小 */
-  color: #444;       /* 稍微淡化颜色 */
-  font-weight: normal; /* 减轻字重 */
-  margin: 2px 0;     /* 减小间距 */
+.profile .title {
+  font-size: 1em;
+  color: #333;
+  margin: 10px 0 5px 0;
 }
+
+.profile .location {
+  font-size: 0.95em;
+  color: #666;
+  margin: 3px 0;
+}
+
+.profile .focus {
+  font-size: 0.95em;
+  color: #666;
+  margin: 3px 0 10px 0;
+}
+
 
 /* Publications 标题样式 */
 #publications h2 {
@@ -469,9 +485,3 @@ footer {
   font-style: italic;  /* 斜体 */
 }
 
-/* 邮件地址样式 */
-.email {
-  color: #2c3e50;
-  cursor: default;  /* 移除鼠标手型指针 */
-  user-select: all; /* 允许用户一次性选择全部文本 */
-}
