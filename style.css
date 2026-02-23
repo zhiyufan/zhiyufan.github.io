@@ -14,7 +14,7 @@ body {
 
 /* 左侧个人信息栏 */
 header {
-  width: 250px;
+  width: 240px;
   padding: 30px 35px;
   background-color: white;
   box-shadow: 2px 0 4px rgba(0,0,0,0.05);
@@ -457,7 +457,7 @@ footer {
 .profile .title {
   font-size: 1em;
   color: #333;
-  margin: 10px 0 5px 0;
+  margin: 2px 0;
 }
 
 .profile .location {
